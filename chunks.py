@@ -1,53 +1,7 @@
 import re
 from langchain_core.documents import Document
 
-"""
-def split_articles(documents):
-    articles = []
 
-    for doc in documents:
-        text = doc.page_content
-
-        matches = list(
-            re.finditer(r"Article\s+\d+\s*[—-]", text)
-        )
-
-        for i, match in enumerate(matches):
-
-            start = match.start()
-
-            if i + 1 < len(matches):
-                end = matches[i + 1].start()
-            else:
-                end = len(text)
-
-            content = text[start:end].strip()
-
-            article_match = re.search(
-                r"Article\s+(\d+)",
-                content
-            )
-
-            article_number = (
-                int(article_match.group(1))
-                if article_match
-                else None
-            )
-
-            article_doc = Document(
-                page_content=content,
-                metadata={
-                    **doc.metadata,
-                    "type": "article",
-                    "article": article_number,
-                }
-            )
-
-            articles.append(article_doc)
-
-    return articles
-
-    """
 
 
 def create_document_chunks(documents):
@@ -70,7 +24,7 @@ def create_document_chunks(documents):
             Document(
                 page_content=general_contents,
                 metadata={
-                    "type": general
+                    "type": "general"
                 }
             )
         )
