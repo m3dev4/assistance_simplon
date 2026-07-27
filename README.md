@@ -594,5 +594,4 @@ C'est simple, efficace, et garantit que les réponses sont exactes !
 ---
 
 **Dernière mise à jour** : 27/07/2026  
-**Maintenu par** : L'équipe Simplon Sénégal  
-**Pour toute question** : Référez-vous à cette documentation ou contactez votre administrateur
+**Maintenu par** : Mouhamed Lo 
