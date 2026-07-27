@@ -14,7 +14,7 @@ OPENROUTER_API_KEY = os.getenv("OPENROUTER_API")
 
 
 llm = ChatOpenAI(
-    model="poolside/laguna-m.1:free",
+    model="inclusionai/ling-3.0-flash:free",
     temperature=0.1,
     api_key=OPENROUTER_API_KEY,
     base_url="https://openrouter.ai/api/v1",
